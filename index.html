@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        li{
+            float: left;
+            padding: 20px;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: black;
+        }
+
+        a{
+            text-decoration: none;
+            display: block;
+        }
+
+        .container:hover .dropdown-content{
+            display: block;
+            padding: 20px;
+            background-color: black;
+          
+        }
+        li:hover {
+            background-color: red;
+        }
+
+        .dropdown-content a:hover{
+            background-color: red;
+            padding: 10px;
+        }
+
+    </style>
+</head> 
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li class="container">
+            <a href=" #product" class="dropbtn">Product</a>
+            <div class="dropdown-content">
+                <a href="#">Sony</a>
+                <a href="#">Samsung</a>
+                <a href="#">Canon</a>
+            </div>
+        </li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+</body>
+</html>
